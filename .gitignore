@@ -1,8 +1,20 @@
+# Environments
 .venv/
+.venv-test/
+
+# Python
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
-mlruns/ 
-mlartifacts/
 .pytest_cache/
+.ipynb_checkpoints/
+
+# MLflow (local tracking store)
+mlruns/
+mlartifacts/
+mlflow.db
+
+
+
+# OS
 .DS_Store
+.tools-versions

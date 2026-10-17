@@ -1,0 +1,5 @@
+-r requirements.txt
+flake8==7.4.1
+ipykernel==7.4.0
+jupyter==1.1.1
+pytest==9.1.1

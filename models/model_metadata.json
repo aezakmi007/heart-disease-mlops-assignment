@@ -1,0 +1,38 @@
+{
+  "model_name": "logistic_regression",
+  "best_params": "{'clf__C': 1, 'clf__penalty': 'l2'}",
+  "metrics": {
+    "cv_roc_auc": 0.9025,
+    "test_accuracy": 0.8852,
+    "test_precision": 0.8387,
+    "test_recall": 0.9286,
+    "test_f1": 0.8814,
+    "test_roc_auc": 0.9665
+  },
+  "features": {
+    "numeric": [
+      "age",
+      "trestbps",
+      "chol",
+      "thalach",
+      "oldpeak"
+    ],
+    "categorical": [
+      "sex",
+      "cp",
+      "fbs",
+      "restecg",
+      "exang",
+      "slope",
+      "ca",
+      "thal"
+    ]
+  },
+  "target": "target",
+  "trained_at_utc": "2026-10-17T18:54:14+00:00",
+  "training_data_sha256": "d0021ed770110715",
+  "model_sha256": "d4d0b7f5cb8ec4ca",
+  "python_version": "3.11.9",
+  "scikit_learn_version": "1.9.1",
+  "random_state": 42
+}
