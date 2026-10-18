@@ -9,7 +9,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # MLflow (local tracking store)
-mlruns/
+mlruns
 mlartifacts/
 mlflow.db
 
