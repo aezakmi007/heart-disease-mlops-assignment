@@ -43,7 +43,6 @@ def test_predict_rejects_invalid_thal_code(client):
     assert client.post("/predict", json={**VALID, "thal": 5}).status_code == 422
 
 
-
 def test_metrics_endpoint_exposes_counters(client):
     client.post("/predict", json=VALID)
     body = client.get("/metrics").text

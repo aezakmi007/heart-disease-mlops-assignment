@@ -17,4 +17,5 @@ mlflow.db
 
 # OS
 .DS_Store
-.tools-versions
+.tools-versions.venv-test/
+.venv-test/
