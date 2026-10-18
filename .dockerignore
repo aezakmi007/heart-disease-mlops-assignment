@@ -1,0 +1,24 @@
+# Environments
+.venv
+.venv-test
+
+# Git / CI
+.git
+.github
+
+# Python
+__pycache__
+*.pyc
+
+# MLflow / models
+mlruns
+models/mlflow_model
+
+# Data, notebooks, reports
+data
+notebooks
+reports
+screenshots
+
+# Tests
+tests

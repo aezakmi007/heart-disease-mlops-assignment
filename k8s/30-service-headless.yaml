@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: heart-api-headless
+  namespace: heart-api
+spec:
+  clusterIP: None
+  selector:
+    app: heart-api
+  ports:
+    - name: http
+      port: 8001
+      targetPort: 8001
