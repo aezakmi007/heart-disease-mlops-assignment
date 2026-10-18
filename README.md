@@ -11,6 +11,8 @@ raw data ─► preprocess ─► train (MLflow) ─► package model ─► Fas
                                                           /metrics + JSON logs ─► Prometheus ─► Grafana
 ```
 
+![Architecture](reports/figures/architecture.png)
+
 ## Table of contents
 
 1. [Project structure](#project-structure)
