@@ -16,20 +16,20 @@ raw data ─► preprocess ─► train (MLflow) ─► package model ─► Fas
 ## Table of contents
 
 1. [Project structure](#project-structure)
-2. [Prerequisites](#prerequisites)
-3. [Setup](#setup)
-4. [Data pipeline](#data-pipeline)
-5. [Training and MLflow tracking](#training-and-mlflow-tracking)
-6. [Model packaging and inference](#model-packaging-and-inference)
-7. [Testing and linting](#testing-and-linting)
-8. [Run the API locally](#run-the-api-locally)
-9. [Docker](#docker)
-10. [Kubernetes deployment](#kubernetes-deployment)
-11. [Monitoring (Prometheus and Grafana)](#monitoring-prometheus-and-grafana)
-12. [CI pipeline](#ci-pipeline)
-13. [API reference](#api-reference)
-14. [Model results](#model-results)
-15. [Report and recording](#report-and-recording)
+2. [Report and recording](#report-and-recording)
+3. [Prerequisites](#prerequisites)
+4. [Setup](#setup)
+5. [Data pipeline](#data-pipeline)
+6. [Training and MLflow tracking](#training-and-mlflow-tracking)
+7. [Model packaging and inference](#model-packaging-and-inference)
+8. [Testing and linting](#testing-and-linting)
+9. [Run the API locally](#run-the-api-locally)
+10. [Docker](#docker)
+11. [Kubernetes deployment](#kubernetes-deployment)
+12. [Monitoring (Prometheus and Grafana)](#monitoring-prometheus-and-grafana)
+13. [CI pipeline](#ci-pipeline)
+14. [API reference](#api-reference)
+15. [Model results](#model-results)
 16. [Troubleshooting](#troubleshooting)
 
 ---
@@ -68,6 +68,21 @@ raw data ─► preprocess ─► train (MLflow) ─► package model ─► Fas
 ├── requirements-api.txt       # slim runtime dependencies for the image
 └── requirements-dev.txt       # + flake8, pytest, jupyter
 ```
+
+## Report and recording
+
+- **Assignment report:** [reports/MLOps_Assignment1_Report.pdf](reports/MLOps_Assignment1_Report.pdf)
+  — the full write-up submitted for this assignment, covering the problem statement, pipeline
+  design, experiment results and deployment/monitoring evidence. Click through to view it in
+  GitHub's built-in PDF viewer (README markdown can't embed an inline viewer directly).
+- **Walkthrough recording:** [recordings/Assignment_walkthorugh.mov](recordings/Assignment_walkthorugh.mov)
+  — a screen recording demonstrating the end-to-end pipeline (training, API, Docker, Kubernetes
+  deployment and Grafana/Prometheus monitoring). Stored via Git LFS; if cloning is slow, download
+  it directly from the GitHub file page instead.
+
+  <video src="https://github.com/aezakmi007/heart-disease-mlops-assignment/raw/main/recordings/Assignment_walkthorugh.mov" controls muted width="720">
+  Your browser does not support inline video playback. <a href="recordings/Assignment_walkthorugh.mov">Download the recording</a> instead.
+  </video>
 
 ## Prerequisites
 
@@ -518,16 +533,6 @@ Held-out test set, selected by cross-validated ROC-AUC (from
 Logistic Regression is the selected model and is the one served by the API. The full write-up is in
 [reports/report.md](reports/report.md), and screenshots of CI, MLflow, Kubernetes and Grafana runs
 are in [screenshots/](screenshots/).
-
-## Report and recording
-
-- **Assignment report:** [reports/MLOps_Assignment1_Report.docx](reports/MLOps_Assignment1_Report.docx)
-  — the full write-up submitted for this assignment, covering the problem statement, pipeline
-  design, experiment results and deployment/monitoring evidence.
-- **Walkthrough recording:** [recordings/Assignment_walkthorugh.mov](recordings/Assignment_walkthorugh.mov)
-  — a screen recording demonstrating the end-to-end pipeline (training, API, Docker, Kubernetes
-  deployment and Grafana/Prometheus monitoring). The file is large (~100 MB); if cloning the repo
-  is slow, download it directly from GitHub instead of via `git clone`.
 
 ## Troubleshooting
 
