@@ -29,7 +29,8 @@ raw data ─► preprocess ─► train (MLflow) ─► package model ─► Fas
 12. [CI pipeline](#ci-pipeline)
 13. [API reference](#api-reference)
 14. [Model results](#model-results)
-15. [Troubleshooting](#troubleshooting)
+15. [Report and recording](#report-and-recording)
+16. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -49,7 +50,8 @@ raw data ─► preprocess ─► train (MLflow) ─► package model ─► Fas
 │   ├── model_metadata.json        # metrics, params, features, versions
 │   └── mlflow_model/              # MLflow-format copy of the model
 ├── notebooks/01_eda.ipynb     # exploratory data analysis
-├── reports/                   # figures, model_comparison.csv, report.md
+├── recordings/                # screen recording of the end-to-end walkthrough
+├── reports/                   # figures, model_comparison.csv, report.md, Word write-up
 ├── scripts/generate_traffic.py    # load generator for the dashboards
 ├── screenshots/               # evidence of CI, MLflow, K8s and Grafana runs
 ├── src/
@@ -516,6 +518,16 @@ Held-out test set, selected by cross-validated ROC-AUC (from
 Logistic Regression is the selected model and is the one served by the API. The full write-up is in
 [reports/report.md](reports/report.md), and screenshots of CI, MLflow, Kubernetes and Grafana runs
 are in [screenshots/](screenshots/).
+
+## Report and recording
+
+- **Assignment report:** [reports/MLOps_Assignment1_Report.docx](reports/MLOps_Assignment1_Report.docx)
+  — the full write-up submitted for this assignment, covering the problem statement, pipeline
+  design, experiment results and deployment/monitoring evidence.
+- **Walkthrough recording:** [recordings/Assignment_walkthorugh.mov](recordings/Assignment_walkthorugh.mov)
+  — a screen recording demonstrating the end-to-end pipeline (training, API, Docker, Kubernetes
+  deployment and Grafana/Prometheus monitoring). The file is large (~100 MB); if cloning the repo
+  is slow, download it directly from GitHub instead of via `git clone`.
 
 ## Troubleshooting
 
